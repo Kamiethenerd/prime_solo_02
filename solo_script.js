@@ -43,9 +43,9 @@ function calculateSTI(employee){
     bonus = 0.13;
   }
 
-  newArray[1] = (bonus * 100) + "%";
-  newArray[2] = Math.round(baseSalary * (1.0 + bonus)); // round the # FIXED
-  newArray[3] = Math.round(baseSalary * bonus); //round the # FIXED
+  newArray[1] = " " + (bonus * 100).toString() + "%";
+  newArray[2] = " " + Math.round(baseSalary * (1.0 + bonus)).toString(); // round the # FIXED
+  newArray[3] = " " + Math.round(baseSalary * bonus).toString(); //round the # FIXED
   console.log(newArray[0] + " " + newArray[1] + " " + newArray[2] + " " + newArray[3]);
   calcArray.push(newArray);
   console.log(calcArray);

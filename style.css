@@ -1,0 +1,9 @@
+body{
+	background: gray;
+}
+ul{
+	font-style: bold;
+	color: purple;
+	font-size: 25px;
+	list-style-type: none;
+}
