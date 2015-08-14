@@ -34,12 +34,11 @@ function calculateSTI(obj){
     this.bonusPerc = bonusPerc;
     this.bonus = bonus;
     this.newSalary = newSalary
-
   }
   var calc = new employeeTotal();
-  console.log(obj)
+  console.log(obj);
 
-  employeeTotal[0] = this.firstName;
+  employeeTotal.name = this.firstName;
 
   var employeeNumber = this.employeeNum;
   var baseSalary = this.salary;
@@ -51,11 +50,11 @@ function calculateSTI(obj){
     console.log(employeeTotal);
   }
 
-  newArray[1] = " " + bonus + "%";
-  newArray[2] = " " + Math.round(baseSalary * (1.0 + bonus)).toString();
-  newArray[3] = " " + Math.round((baseSalary) * bonus).toString();
-  console.log(newArray[0] + " " + newArray[1] + " " + newArray[2] + " " + newArray[3]);
-  return newArray;
+  employeeTotal.bonusPerc = " " + bonus + "%";
+  employeeTotal.newSalary = " " + Math.round(baseSalary * (1.0 + bonus)).toString();
+  employeeTotal.bonus = " " + Math.round((baseSalary) * bonus).toString();
+  console.log(employeeTotal);
+  return employeeTotal;
 }
 
 function getBaseSTI(reviewScore){
